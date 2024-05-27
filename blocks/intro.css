@@ -1,0 +1,68 @@
+/* Sección intro */
+/* por encima de 768 */
+.intro {
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
+  max-width: 830px;
+}
+.intro__title {
+  font-size: 54px;
+  font-weight: 900;
+}
+.intro__quote {
+  display: flex;
+  flex-direction: column;
+  max-width: 738px;
+  padding-top: 50px;
+}
+.intro__quote-text {
+  font-size: 24px;
+  font-weight: 400;
+}
+.intro__quote-author {
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: right;
+  max-width: 732px;
+}
+
+.intro__text {
+  padding-top: 32px;
+  max-width: 722px;
+}
+
+/* por debajo de 999 */
+@media screen and (max-width: 999px) {
+  .intro {
+    margin: 0px 4%;
+  }
+}
+
+/* por debajo de 768 */
+@media screen and (max-width: 768px) {
+  .intro__title {
+    font-size: 45px;
+    font-weight: 900;
+  }
+  .intro__quote {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro__quote-author {
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: right;
+  }
+}
+/* por dejabo de 320 */
+@media screen and (max-width: 320px) {
+  .intro__title {
+    font-size: 32px;
+  }
+  .intro__quote {
+    padding-top: 40px;
+  }
+}

@@ -1,0 +1,19 @@
+.logo {
+  display: block;
+  margin: auto;
+  padding: 3%;
+  object-fit: fill;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    padding-top: 4.3%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo {
+    width: 188px;
+    padding-top: 5.5%;
+  }
+}
