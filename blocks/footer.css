@@ -8,5 +8,7 @@
 
 /* por dejabo de 768 */
 @media screen and (max-width: 768px) {
-  padding-top: 70px;
+  .footer {
+    padding-top: 70px;
+  }
 }
