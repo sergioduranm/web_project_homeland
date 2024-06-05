@@ -3,7 +3,6 @@
 .lead {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -20,7 +19,7 @@
 }
 .lead__image {
   padding-top: min(20vw, 64px);
-  max-width: 100%;
+  width: 100%;
 }
 
 /* por dejabo de 768 */
