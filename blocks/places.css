@@ -1,0 +1,174 @@
+.places {
+  display: grid;
+  gap: 80px;
+  padding-top: 92px;
+}
+
+.places__card {
+  display: grid;
+  gap: 48px;
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: auto 460px auto;
+  grid-template-areas:
+    "title artists"
+    "image description"
+    "btn-buy description";
+  max-width: 1000px;
+}
+
+.places__title {
+  grid-area: title;
+  font-family: "Inter";
+  font-size: 72px;
+  max-width: 460px;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+.places__artists {
+  grid-area: artists;
+  justify-self: start;
+  align-self: end;
+  line-height: 1.15;
+}
+
+.places__artists-title {
+  line-height: 1.5;
+  font-size: 12px;
+  padding-bottom: 8px;
+  letter-spacing: 12%;
+}
+
+.places__artists-names {
+  font-style: normal;
+  font-size: 18px;
+}
+
+.places__image {
+  grid-area: image;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.places__image:hover {
+  opacity: 0.5;
+}
+
+.places__image::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.places__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.places__description {
+  grid-area: description;
+}
+
+.places__description p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.places__btn-buy {
+  grid-area: btn-buy;
+  width: 288px;
+  height: 48px;
+  background: rgb(2, 120, 254);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 1) 0%,
+    rgba(0, 58, 123, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 1) 0%,
+    rgba(0, 58, 123, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 1) 0%,
+    rgba(0, 58, 123, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0278fe",endColorstr="#003a7b",GradientType=1);
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.places__btn-buy:hover {
+  background: rgb(2, 120, 254);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0278fe",endColorstr="#003a7b",GradientType=1);
+}
+
+/* por debajo de 999 */
+@media screen and (max-width: 999px) {
+  .places {
+    gap: 80px;
+    padding: 88px 4% 0 4%;
+  }
+
+  .places__card {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 340px 1fr;
+    grid-template-rows: auto 340px auto;
+    grid-template-areas:
+      "title artists"
+      "image description"
+      "btn-buy description";
+    max-width: 1000px;
+  }
+}
+
+/* por debajo de 768 */
+@media screen and (max-width: 768px) {
+  .places {
+    gap: 80px;
+    padding: 62px 4% 0 4%;
+  }
+
+  .places__card {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "title"
+      "artists"
+      "image"
+      "description"
+      "btn-buy";
+    max-width: 1000px;
+  }
+}
