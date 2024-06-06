@@ -36,7 +36,7 @@
   line-height: 1.5;
   font-size: 12px;
   padding-bottom: 8px;
-  letter-spacing: 12%;
+  letter-spacing: 0.12em;
 }
 
 .places__artists-names {
