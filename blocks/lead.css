@@ -20,6 +20,7 @@
 .lead__image {
   padding-top: min(20vw, 64px);
   width: 100%;
+  overflow: hidden;
 }
 
 /* por dejabo de 768 */
