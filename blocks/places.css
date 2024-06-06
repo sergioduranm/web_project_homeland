@@ -86,23 +86,7 @@
   grid-area: btn-buy;
   width: 288px;
   height: 48px;
-  background: rgb(2, 120, 254);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(2, 120, 254, 1) 0%,
-    rgba(0, 58, 123, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(2, 120, 254, 1) 0%,
-    rgba(0, 58, 123, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(2, 120, 254, 1) 0%,
-    rgba(0, 58, 123, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0278fe",endColorstr="#003a7b",GradientType=1);
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   color: white;
   border: none;
   cursor: pointer;
@@ -113,23 +97,7 @@
 }
 
 .places__btn-buy:hover {
-  background: rgb(2, 120, 254);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(2, 120, 254, 0.25) 0%,
-    rgba(0, 58, 123, 0.25) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(2, 120, 254, 0.25) 0%,
-    rgba(0, 58, 123, 0.25) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(2, 120, 254, 0.25) 0%,
-    rgba(0, 58, 123, 0.25) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0278fe",endColorstr="#003a7b",GradientType=1);
+  background: linear-gradient(90deg, #0278fe40 0%, #003a7b40 99.98%);
 }
 
 /* por debajo de 999 */
