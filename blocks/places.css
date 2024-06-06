@@ -108,15 +108,9 @@
   }
 
   .places__card {
-    display: grid;
     gap: 30px;
     grid-template-columns: 340px 1fr;
     grid-template-rows: auto 340px auto;
-    grid-template-areas:
-      "title artists"
-      "image description"
-      "btn-buy description";
-    max-width: 1000px;
   }
 
   .places__title {
@@ -136,7 +130,6 @@
   }
 
   .places__card {
-    display: grid;
     gap: 30px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
